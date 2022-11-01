@@ -1,0 +1,14 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "node-red-contrib-bitunloader": "~0.3.7",
+        "node-red-contrib-boolean-logic-ultimate": "~1.0.53",
+        "node-red-contrib-queue-gate": "~1.5.5",
+        "node-red-contrib-simple-gate": "~0.5.2",
+        "node-red-contrib-ui-media": "~1.2.0",
+        "node-red-node-ui-vega": "~0.2.1"
+    }
+}

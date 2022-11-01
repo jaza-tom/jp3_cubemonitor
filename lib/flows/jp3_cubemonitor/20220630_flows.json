@@ -1,0 +1,31 @@
+[
+    {
+        "id": "e5b177060d67baa1",
+        "type": "inject",
+        "z": "b91e3021b1978fdf",
+        "name": "open gate delay",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "control",
+        "payload": "open",
+        "payloadType": "str",
+        "x": 200,
+        "y": 340,
+        "wires": [
+            [
+                "757c4f22a1fd436d"
+            ]
+        ]
+    }
+]

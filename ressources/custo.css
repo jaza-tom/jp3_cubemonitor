@@ -1,0 +1,271 @@
+#red-ui-header-button-deploy,
+#stm32cubemonitor-dashboard-button {
+  color: #FFF !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14px !important;
+  background: #3CB4E6 !important;
+}
+
+#red-ui-header-button-deploy:not(.disabled):hover,
+#stm32cubemonitor-dashboard-button:hover {
+  background: rgba(57, 169, 220, 0.4) !important;
+  color: white !important;
+}
+
+
+#red-ui-header-button-deploy:not(.disabled):not(:disabled):active,
+#stm32cubemonitor-dashboard-button:active {
+  border-color: transparent !important;
+  background: #002052 !important;
+  color: #FFF !important;
+}
+
+#red-ui-header-button-deploy.disabled {
+  color: #9CD4ED !important;
+}
+
+#red-ui-header-button-deploy-options {
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.red-ui-deploy-button-group.open #red-ui-header-button-deploy-options {
+  background: #3CB4E6 !important;
+  color: #002052 !important;
+}
+
+
+#red-ui-header ul.red-ui-menu-dropdown>li:hover>a,
+#red-ui-header ul.red-ui-menu-dropdown>li:focus>a {
+  background: #9CD4ED !important;
+}
+
+#red-ui-header #usermenu-item-username>.red-ui-menu-label{
+	color: #002052 !important;
+}
+
+#red-ui-header ul.red-ui-menu-dropdown li a {
+  color: #002052 !important;
+}
+
+#red-ui-header ul.red-ui-menu-dropdown li.red-ui-menu-divider {
+  background: #9CD4ED !important;
+  border-bottom-color: #9CD4ED !important;
+}
+
+#red-ui-header ul.red-ui-menu-dropdown {
+  background: #FFF !important;
+  border-color: #3CB4E6 !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#red-ui-header {
+  background: white !important;
+  color: #3CB4E6 !important;
+  height: 60px
+}
+
+#red-ui-header .red-ui-header-toolbar {
+  margin-top: 10px;
+}
+
+#red-ui-header .button,
+#red-ui-header .button:focus {
+  color: #3CB4E6 !important;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+#red-ui-header li.open .button {
+  background: #FFF;
+  border-color: #FFF;
+  color: rgba(57, 169, 220, 0.7) !important;
+  color: #002052 !important;
+}
+
+#red-ui-header .button.active,
+#red-ui-header .button:active {
+  background: #FFF;
+  color: rgba(57, 169, 220, 0.7) !important;
+}
+
+#red-ui-header .button.hover,
+#red-ui-header .button:hover {
+  background: #FFF;
+  color: rgba(57, 169, 220, 0.4) !important;
+  border-color: #FFF;
+}
+
+#red-ui-header span.red-ui-header-logo img {
+  height: 50px !important;
+}
+
+body {
+  color: #002052 !important;
+}
+
+.red-ui-tabs ul li {
+  border-radius: 5px 5px 0 0;
+}
+
+#red-ui-main-container {
+  top: 60px;
+}
+
+.red-ui-tabs.red-ui-tabs-vertical ul li {
+  border-radius: 0px;
+}
+
+.red-ui-tray-toolbar button {
+  border-radius: 5px;
+}
+
+.red-ui-tray-toolbar button.primary,
+.red-ui-tray-toolbar button.primary:not(.disabled):not(:disabled):focus {
+  border-color: #3CB4E6 !important;
+  background: #3CB4E6 !important;
+  color: #FFF !important;
+}
+
+.red-ui-tray-toolbar button.primary:not(.disabled):not(:disabled):hover {
+  border-color: transparent !important;
+  background: rgba(57, 169, 220, 0.4) !important;
+  color: #FFF !important;
+}
+
+.red-ui-tray-toolbar button.primary:not(.disabled):not(:disabled):active {
+  border-color: transparent !important;
+  background: rgba(57, 169, 220, 0.7) !important;
+  color: #FFF !important;
+}
+
+.red-ui-tray-toolbar button.leftButton,
+.red-ui-tray-toolbar button.leftButton:not(.disabled):not(:disabled):focus {
+  border-color: #ED0284 !important;
+  background: #ED0284 !important;
+  color: #FFF !important;
+}
+
+.red-ui-tray-toolbar button.leftButton:not(.disabled):not(:disabled):hover {
+  border-color: transparent !important;
+  background: rgba(237, 2, 132, 0.4) !important;
+  color: #FFF !important;
+}
+
+.red-ui-tray-toolbar button.leftButton:not(.disabled):not(:disabled):active {
+  border-color: transparent !important;
+  background: rgba(237, 2, 132, 0.7) !important;
+  color: #FFF !important;
+}
+
+/*Login popup configuration*/
+
+.popup-window {
+  padding: 50px 15px 10px;
+}
+
+/* Top bar display */
+#bar{
+  background: #f3f3f3;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #bbb;
+  border-radius: 0;
+  position: absolute;
+  display: block;
+  width: 610px;
+  height: 20px;
+  margin: 0px 0px 0px 0px;
+  top: 0px;
+  left: 0px;
+}
+
+/*Image field display*/
+.popup-window #image{
+  height: 150px;
+  width: 270px;
+  vertical-align: middle;
+  border: 0;
+}
+
+#picture{
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+/*Form field display*/
+.popup-window #form{
+  display: inline-block;
+  width: 250px;
+  vertical-align: bottom;
+  margin: 0px 0px 20px 30px;
+}
+
+/* Text inputs display*/
+#input1, #input2{
+  clear: both;
+  color: #555;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.popup-window #name, #pwd{
+  display: inline-block;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  padding: 6px 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  line-height: 20px;
+  height: 34px;
+  width: 250px;
+}
+
+.popup-window label{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  color: 555;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 100px;
+}
+
+/*Buttons display*/
+#cancel.cancelButton{
+  background: #FFF;
+  color: #888;
+  border: 1px solid #ddd;
+}
+
+#login.loginButton{
+  background: #EFEFEF;
+  color: #454545;
+  border: 1px solid #ccc;
+}
+
+#cancel.cancelButton, #login.loginButton{
+  box-sizing:border-box;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  height: 34px;
+  line-height: 32px;
+  font-size: 13px;
+  border-radius: 2px;
+  padding: 0 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-left:0px;
+}
