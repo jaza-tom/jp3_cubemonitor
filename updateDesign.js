@@ -85,6 +85,6 @@ let updateMenu = _ => {
 updateMenu();
 let about = {
     productName:"STM32CubeMonitor",
-    version:"1.4.0",
+    version:"1.5.0",
     copyright:"STMicroelectronics"
 };

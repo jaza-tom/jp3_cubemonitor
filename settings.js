@@ -43,7 +43,7 @@ module.exports = {
     // Protocol to use by stLinkDriver to communicate with the probe:
     // - "tcp" to pass through to tcp-server assuming the stLinkServer is installed on the host
     // - "p2p" connect directly to the probe (default)
-    connectionType: "tcp",
+    connectionType: "p2p",
 
     // Retry time in milliseconds for TCP socket connections
     //socketReconnectTime: 10000,
