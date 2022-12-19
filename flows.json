@@ -22069,7 +22069,8 @@
         "y": 60,
         "wires": [
             [
-                "4d419b826f41a426"
+                "4d419b826f41a426",
+                "bd0ca72e341bddc1"
             ],
             [
                 "386cb2f1a923ed14"
@@ -22454,7 +22455,7 @@
         "id": "0195adbedda16939",
         "type": "exec",
         "z": "b91e3021b1978fdf",
-        "command": "call \"C:\\PARTICLE_LOCAL\\JP3\\cubemonitor\\logs\\rotate_log.bat\"",
+        "command": "call \"C:\\PARTICLE_LOCAL\\JP3\\cubemonitor\\rotate_log.bat\"",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
@@ -22465,11 +22466,15 @@
         "x": 570,
         "y": 40,
         "wires": [
-            [],
             [
                 "a95fcdcdb5a87f09"
             ],
-            []
+            [
+                "a95fcdcdb5a87f09"
+            ],
+            [
+                "a95fcdcdb5a87f09"
+            ]
         ]
     },
     {
@@ -22506,34 +22511,9 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 800,
+        "x": 850,
         "y": 40,
         "wires": []
-    },
-    {
-        "id": "4d419b826f41a426",
-        "type": "delay",
-        "z": "b91e3021b1978fdf",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "2",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 560,
-        "y": 120,
-        "wires": [
-            [
-                "bd0ca72e341bddc1"
-            ]
-        ]
     },
     {
         "id": "7b083dc50c796ab2",
@@ -22568,7 +22548,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": "5",
+        "onceDelay": "10",
         "topic": "control",
         "payload": "open",
         "payloadType": "str",
@@ -22579,6 +22559,29 @@
                 "34371599634d550a",
                 "8e541a635b48eaf1"
             ]
+        ]
+    },
+    {
+        "id": "4d419b826f41a426",
+        "type": "delay",
+        "z": "b91e3021b1978fdf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 120,
+        "wires": [
+            []
         ]
     }
 ]
