@@ -1692,7 +1692,8 @@
             {
                 "address": "0x20000524",
                 "name": "cell_relaxed",
-                "type": 1
+                "type": 1,
+                "checked": true
             },
             {
                 "address": "0x20000906",
@@ -1953,22 +1954,26 @@
             {
                 "address": "0x200008a0",
                 "name": "last_active_current",
-                "type": 6
+                "type": 6,
+                "checked": true
             },
             {
                 "address": "0x200008a4",
                 "name": "last_active_voltages[0]",
-                "type": 4
+                "type": 4,
+                "checked": true
             },
             {
                 "address": "0x200008a6",
                 "name": "last_active_voltages[1]",
-                "type": 4
+                "type": 4,
+                "checked": true
             },
             {
                 "address": "0x200008a8",
                 "name": "last_active_voltages[2]",
-                "type": 4
+                "type": 4,
+                "checked": true
             },
             {
                 "address": "0x2000024c",
@@ -12321,7 +12326,7 @@
         "expand": true,
         "filename": "JP3App.elf",
         "exeModifiedTime": 1671463242673,
-        "configLastUpdate": 1671474843090
+        "configLastUpdate": 1671548323370
     },
     {
         "id": "819699e460e9f817",
@@ -15089,7 +15094,7 @@
         "group": "68f348900d89abda",
         "width": "3",
         "height": "1",
-        "label": "ds session started",
+        "label": "ds started",
         "labelPlacement": "right",
         "labelAlignment": "left",
         "colorForValue": [
@@ -15107,8 +15112,8 @@
         "allowColorForValueInMessage": false,
         "shape": "circle",
         "showGlow": true,
-        "name": "ds session started",
-        "x": 2770,
+        "name": "ds started",
+        "x": 2740,
         "y": 2860,
         "wires": []
     },
@@ -16605,7 +16610,7 @@
         "group": "a1e06210a23ca186",
         "width": "5",
         "height": "1",
-        "label": "ds session started",
+        "label": "ds started",
         "labelPlacement": "right",
         "labelAlignment": "left",
         "colorForValue": [
@@ -16623,8 +16628,8 @@
         "allowColorForValueInMessage": false,
         "shape": "circle",
         "showGlow": true,
-        "name": "ds session started",
-        "x": 1670,
+        "name": "ds started",
+        "x": 1640,
         "y": 2380,
         "wires": []
     },
@@ -22027,7 +22032,7 @@
         "z": "b91e3021b1978fdf",
         "name": "myProbe_Out",
         "probeconfig": "706cfb4766ac40d8",
-        "x": 780,
+        "x": 740,
         "y": 120,
         "wires": []
     },
@@ -22037,8 +22042,8 @@
         "z": "b91e3021b1978fdf",
         "name": "myProbe_In",
         "probeconfig": "706cfb4766ac40d8",
-        "x": 170,
-        "y": 420,
+        "x": 570,
+        "y": 360,
         "wires": [
             [
                 "34371599634d550a"
@@ -22063,13 +22068,12 @@
         "frequencyType": "1",
         "snapshotheader": "",
         "mode": "direct",
-        "lastImportedTime": 1671474843815,
+        "lastImportedTime": 1671548324303,
         "openStatus": true,
-        "x": 280,
-        "y": 60,
+        "x": 560,
+        "y": 160,
         "wires": [
             [
-                "4d419b826f41a426",
                 "bd0ca72e341bddc1"
             ],
             [
@@ -22097,11 +22101,12 @@
         "payloadType": "str",
         "topic": "start",
         "topicType": "str",
-        "x": 80,
+        "x": 180,
         "y": 80,
         "wires": [
             [
-                "8d5a98f721758df6"
+                "0195adbedda16939",
+                "4d419b826f41a426"
             ]
         ]
     },
@@ -22125,7 +22130,7 @@
         "payloadType": "str",
         "topic": "stop",
         "topicType": "str",
-        "x": 80,
+        "x": 180,
         "y": 140,
         "wires": [
             [
@@ -22148,8 +22153,8 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 610,
-        "y": 160,
+        "x": 750,
+        "y": 180,
         "wires": []
     },
     {
@@ -22283,8 +22288,8 @@
         "statistics": [],
         "logmode": "changes",
         "logformat": "stcm",
-        "x": 600,
-        "y": 380,
+        "x": 920,
+        "y": 280,
         "wires": [
             [
                 "790ef60fb158a35c",
@@ -22298,8 +22303,8 @@
         "type": "subflow:ce3dd5f5958807b7",
         "z": "b91e3021b1978fdf",
         "name": "DASHBOARD",
-        "x": 860,
-        "y": 300,
+        "x": 1100,
+        "y": 240,
         "wires": []
     },
     {
@@ -22318,12 +22323,11 @@
         "once": true,
         "onceDelay": "1",
         "topic": "start",
-        "x": 120,
-        "y": 320,
+        "x": 180,
+        "y": 200,
         "wires": [
             [
-                "f28de7cc37d50a31",
-                "8d5a98f721758df6",
+                "4d419b826f41a426",
                 "0195adbedda16939"
             ]
         ]
@@ -22343,7 +22347,7 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 350,
+        "x": 570,
         "y": 220,
         "wires": []
     },
@@ -22370,8 +22374,8 @@
         "qToggle": true,
         "persist": false,
         "storeName": "memory",
-        "x": 450,
-        "y": 420,
+        "x": 770,
+        "y": 320,
         "wires": [
             [
                 "a5393faf207f169a"
@@ -22398,7 +22402,7 @@
         "payloadType": "str",
         "topic": "control",
         "topicType": "str",
-        "x": 440,
+        "x": 560,
         "y": 280,
         "wires": [
             [
@@ -22422,7 +22426,7 @@
         "className": "",
         "topic": "",
         "name": "qgate control",
-        "x": 650,
+        "x": 790,
         "y": 260,
         "wires": []
     },
@@ -22442,8 +22446,8 @@
         "once": false,
         "onceDelay": "2",
         "topic": "stop",
-        "x": 90,
-        "y": 280,
+        "x": 210,
+        "y": 260,
         "wires": [
             [
                 "8d5a98f721758df6",
@@ -22463,17 +22467,20 @@
         "winHide": false,
         "oldrc": false,
         "name": "rotate csv log",
-        "x": 570,
+        "x": 430,
         "y": 40,
         "wires": [
             [
-                "a95fcdcdb5a87f09"
+                "a95fcdcdb5a87f09",
+                "3b4f1f7483772632"
             ],
             [
-                "a95fcdcdb5a87f09"
+                "a95fcdcdb5a87f09",
+                "3b4f1f7483772632"
             ],
             [
-                "a95fcdcdb5a87f09"
+                "a95fcdcdb5a87f09",
+                "3b4f1f7483772632"
             ]
         ]
     },
@@ -22492,8 +22499,8 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 490,
-        "y": 480,
+        "x": 810,
+        "y": 380,
         "wires": []
     },
     {
@@ -22527,8 +22534,8 @@
                 "type": "str"
             }
         ],
-        "x": 850,
-        "y": 420,
+        "x": 1130,
+        "y": 300,
         "wires": []
     },
     {
@@ -22552,8 +22559,8 @@
         "topic": "control",
         "payload": "open",
         "payloadType": "str",
-        "x": 120,
-        "y": 360,
+        "x": 560,
+        "y": 320,
         "wires": [
             [
                 "34371599634d550a",
@@ -22578,8 +22585,28 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 560,
-        "y": 120,
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "8d5a98f721758df6",
+                "f28de7cc37d50a31"
+            ]
+        ]
+    },
+    {
+        "id": "3b4f1f7483772632",
+        "type": "file",
+        "z": "b91e3021b1978fdf",
+        "name": "",
+        "filename": "C:\\PARTICLE_LOCAL\\JP3\\cubemonitor\\logs\\debug\\rotate_logs.log",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1000,
+        "y": 80,
         "wires": [
             []
         ]
